@@ -1,0 +1,73 @@
+html {
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-top: .3em;
+}
+
+#homepage-content {
+    padding: 0.5em;
+}
+
+#article-content {
+    padding: 0.5em;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1em;
+    font-variant: small-caps;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    border: 1px;
+    border-style: dotted;
+    border-color: blue;
+}
+
+a:hover {
+    background: whitesmoke;
+}
+
+#single-top-div {
+    text-align: center;
+    padding: 0;
+}
+
+#single-top-title {
+    margin-bottom: 0.2em;
+}
+
+#single-top-date {
+    margin-top: 0em;
+    font-size: 0.7em;
+}
+
+.homepage-content {
+    margin-bottom: 2em;
+}
+
+#last-post-intro {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    margin-bottom: 0.5em;
+}
+
+#post-date {
+    width: 15%;
+}
+
+#post-title {
+    width: 30%;
+}
+
+#post-summary {
+    width:50%;
+}
