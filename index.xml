@@ -12,12 +12,16 @@
     
     
     <item>
-      <title>C&#43;&#43; Basic Snippets</title>
+      <title>C&#43;&#43; Notes</title>
       <link>https://iceluke.github.io/post/cpp-notes/</link>
       <pubDate>Fri, 15 Feb 2019 19:42:27 -0500</pubDate>
       
       <guid>https://iceluke.github.io/post/cpp-notes/</guid>
-      <description>1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22  /* Command-line arguments, Basic output */ #include &amp;lt;iostream&amp;gt; int main (int argc, char **argv) { std::cout &amp;lt;&amp;lt; &amp;#34;argc = &amp;#34; &amp;lt;&amp;lt; argc &amp;lt;&amp;lt; std::endl; while (*argv!=NULL) { std::cout &amp;lt;&amp;lt; *(argv++) &amp;lt;&amp;lt; std::endl; } return 0; } // $ ./a.out 1 2 3 4 // argc = 4 // .</description>
+      <description>Motivations I have to work on a project using cpp soon. Having little exposure to it, I&amp;rsquo;ll try to quickly learn the basics of the language. Starting with 1998 C++ (The C++ Programming Language, Stroustrup). This post will be a collection of brief notes/snippets.
+Some links  Learning C++ if you already know C
+ C++ built on C95.  Compatibility of C and C++
+ void* pointers
+ conversion to enum</description>
     </item>
     
   </channel>

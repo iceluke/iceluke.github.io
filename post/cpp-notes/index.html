@@ -2,138 +2,76 @@
 <html><head>
     <link rel="stylesheet" type="text/css" href="https://iceluke.github.io/css/styles.css">
 </head><body><header>
-    <h1><a href="https://iceluke.github.io/">Elucubrations</a></h1>
+    <h1 id="site-title"><a href="https://iceluke.github.io/">Elucubrations</a></h1>
 </header>
 <hr><div id="content">
 <section id="main">
     <div id="single-top-div">
-        <h3 id="single-top-title">C&#43;&#43; Basic Snippets</h1>
+        <h3 id="single-top-title">C&#43;&#43; Notes</h1>
         <p id="single-top-date">Feb, 15 2019</p>
     </div>
     <hr>
     <div>
         <article id="article-content">
-            <div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">22
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">/* Command-line arguments, Basic output */</span>
+            
 
-<span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-<span style="color:#00a8c8">int</span>
-<span style="color:#75af00">main</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">argc</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span> <span style="color:#f92672">**</span><span style="color:#111">argv</span><span style="color:#111">)</span>
-<span style="color:#111">{</span>
-    <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;argc = &#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">argc</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">endl</span><span style="color:#111">;</span>
-    <span style="color:#00a8c8">while</span> <span style="color:#111">(</span><span style="color:#f92672">*</span><span style="color:#111">argv</span><span style="color:#f92672">!=</span><span style="color:#111">NULL</span><span style="color:#111">)</span> <span style="color:#111">{</span>
-        <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#f92672">*</span><span style="color:#111">(</span><span style="color:#111">argv</span><span style="color:#f92672">++</span><span style="color:#111">)</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">endl</span><span style="color:#111">;</span>
-    <span style="color:#111">}</span>
-    <span style="color:#00a8c8">return</span> <span style="color:#ae81ff">0</span><span style="color:#111">;</span>
-<span style="color:#111">}</span>
+<h1 id="motivations">Motivations</h1>
 
-<span style="color:#75715e">// $ ./a.out 1 2 3 4
-</span><span style="color:#75715e">// argc = 4
-</span><span style="color:#75715e">// ./a.out
-</span><span style="color:#75715e">// 1
-</span><span style="color:#75715e">// 2
-</span><span style="color:#75715e">// 3
-</span><span style="color:#75715e">// 4 
-</span><span style="color:#75715e"></span></code></pre></td></tr></table>
-</div>
-</div>
+<p>I have to work on a project using cpp soon. Having little exposure to it, I&rsquo;ll try to quickly learn the basics of the language. Starting with 1998 C++ (<em>The C++ Programming Language, Stroustrup</em>). This post will be a collection of brief notes/snippets.</p>
 
-<div class="highlight"><div style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4">
-<table style="border-spacing:0;padding:0;margin:0;border:0;width:auto;overflow:auto;display:block;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 1
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 2
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 3
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 4
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 5
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 6
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 7
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 8
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390"> 9
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">10
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">11
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">12
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">13
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">14
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">15
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">16
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">17
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">18
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">19
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">20
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">21
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">22
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">23
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">24
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">25
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">26
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">27
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">28
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">29
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">30
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">31
-</span><span style="margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#939390">32
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre style="color:#272822;background-color:#fafafa;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-c++" data-lang="c++"><span style="color:#75715e">/* Creating simple classes, uniform initialization */</span>
+<h1 id="some-links">Some links</h1>
 
-<span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span> 
-<span style="color:#00a8c8">class</span><span style="color:#960050;background-color:#1e0010"> </span><span style="color:#75af00">Rectangle</span> <span style="color:#111">{</span>
-<span style="color:#00a8c8">private</span><span style="color:#f92672">:</span>
-    <span style="color:#00a8c8">int</span> <span style="color:#111">_width</span><span style="color:#111">;</span>
-    <span style="color:#00a8c8">int</span> <span style="color:#111">_height</span><span style="color:#111">;</span>
-<span style="color:#00a8c8">public</span><span style="color:#f92672">:</span>
-        <span style="color:#111">Rectangle</span><span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">w</span><span style="color:#111">,</span> <span style="color:#00a8c8">int</span> <span style="color:#111">h</span><span style="color:#111">)</span>
-            <span style="color:#f92672">:</span> <span style="color:#111">_width</span><span style="color:#111">(</span><span style="color:#111">w</span><span style="color:#111">),</span> <span style="color:#111">_height</span><span style="color:#111">(</span><span style="color:#111">h</span><span style="color:#111">)</span>
-        <span style="color:#111">{</span>
+<ul>
+<li><p><a href="https://isocpp.org/wiki/faq/c">Learning C++ if you already know C</a></p>
 
-        <span style="color:#111">}</span>
+<ul>
+<li>C++ built on C95.</li>
+</ul></li>
 
-        <span style="color:#00a8c8">void</span> <span style="color:#111">print</span><span style="color:#111">()</span>
-        <span style="color:#111">{</span>
-            <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">cout</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;Rectangle: width=&#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">_width</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#d88200">&#34;, height=&#34;</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">_height</span> <span style="color:#f92672">&lt;&lt;</span> <span style="color:#111">std</span><span style="color:#f92672">::</span><span style="color:#111">endl</span><span style="color:#111">;</span>
-        <span style="color:#111">}</span>
-<span style="color:#111">};</span>
+<li><p><a href="https://en.wikipedia.org/wiki/Compatibility_of_C_and_C%2B%2B">Compatibility of C and C++</a></p>
 
-<span style="color:#00a8c8">int</span>
-<span style="color:#75af00">main</span> <span style="color:#111">(</span><span style="color:#00a8c8">int</span> <span style="color:#111">argc</span><span style="color:#111">,</span> <span style="color:#00a8c8">char</span> <span style="color:#f92672">**</span><span style="color:#111">argv</span><span style="color:#111">)</span>
-<span style="color:#111">{</span>
-    <span style="color:#75715e">// uniform initialization (c++11)
-</span><span style="color:#75715e"></span>    <span style="color:#111">Rectangle</span> <span style="color:#111">r</span> <span style="color:#111">{</span><span style="color:#ae81ff">5</span><span style="color:#111">,</span><span style="color:#ae81ff">6</span><span style="color:#111">};</span>
-    <span style="color:#111">r</span><span style="color:#111">.</span><span style="color:#111">print</span><span style="color:#111">();</span>
-<span style="color:#111">}</span>
+<ul>
+<li><p><code>void*</code> pointers</p></li>
 
-<span style="color:#75715e">// $ ./a.out
-</span><span style="color:#75715e">// Rectangle: width=5, height=6
-</span><span style="color:#75715e"></span></code></pre></td></tr></table>
-</div>
-</div>
+<li><p>conversion to <code>enum</code></p></li>
+
+<li><p><code>typedef</code></p></li>
+
+<li><p>empty function prototypes</p></li>
+</ul></li>
+</ul>
+
+<h1 id="chapter-2-an-overview-of-the-language">Chapter 2: An overview of the language</h1>
+
+<ul>
+<li><p><a href="https://en.wikipedia.org/wiki/Procedural_programming">procedural programming</a>: procedure calls (functions)</p></li>
+
+<li><p><code>&lt;&lt;</code>: put to, <code>&gt;&gt;</code>: get from</p></li>
+
+<li><p><code>cout</code>, <code>cin</code>: standard output/input streams</p></li>
+
+<li><p><a href="https://en.wikipedia.org/wiki/Modular_programming">modular programming</a>: &ldquo;data-hiding principle&rdquo;(<a href="https://en.wikipedia.org/wiki/Information_hiding">encapsulation</a>)</p></li>
+
+<li><p>namespaces: information hiding, prevent name conflicts</p></li>
+
+<li><p>separate compilation</p></li>
+
+<li><p><code>throw</code> as &ldquo;multilevel return&rdquo; (<code>try catch</code> blocks)</p></li>
+
+<li><p>user-defined types: using <code>class</code>, can define operations using <code>operator{OPERAND}</code></p></li>
+
+<li><p>destructor: <code>~{CLASSNAME}</code></p></li>
+
+<li><p>abstract types: <code>virtual</code> (&hellip; <code>=0</code>), <code>:public</code></p></li>
+
+<li><p>generic programming</p></li>
+
+<li><p><code>template&lt;class T&gt;</code></p></li>
+
+<li><p>container class</p></li>
+</ul>
+
+<h1 id="chapter-3-an-overview-of-the-standard-library">Chapter 3: An overview of the standard library</h1>
 
         </article>
     </div>

@@ -12,10 +12,18 @@ html {
     padding: 0.5em;
 }
 
-h1 {
-    text-align: center;
+#site-title {
+    text-align: left;
     font-size: 1em;
     font-variant: small-caps;
+}
+
+code {
+    background-color: whitesmoke;
+}
+
+.highlight code {
+    background-color: inherit;
 }
 
 a {
